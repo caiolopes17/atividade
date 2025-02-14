@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url('img/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 400px; /* Mantém um tamanho fixo */
+    height: 500px; /* Define uma altura fixa para evitar mudanças no layout */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden; /* Evita que o conteúdo estoure o tamanho */
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #333; /* Texto escuro para melhor visibilidade */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.opcoes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.opcao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.opcao img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Remove o efeito de aumento */
+.opcao img:hover {
+    transform: none;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Define um tamanho fixo para a área do resultado */
+#resultado {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    min-height: 50px; /* Mantém a altura fixa para não expandir */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
